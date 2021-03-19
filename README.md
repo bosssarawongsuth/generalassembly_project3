@@ -1,5 +1,11 @@
 # GA Project 3 - Web APIs & Classification
 ## Jetnipat Sarawongsuth 
+This project contains 2 jupyter notebooks:
+- Project 3 - Data Collection (code for getting the data from reddit api)
+- Project 3 - Web APIs & Classification (lotr&harrypotter) MAIN NOTEBOOK
+
+**The notebook that should be marked is Project 3 - Web APIs & Classification (lotr&harrypotter) **
+
 
 ### Problem Statement
 Reddit is a massive global online forum with a heavy focus on its communities. These communities are divided into subreddits with each being specific to a certain subject. The variety of the subreddit topics can range from an educational data science subreddit to art, books, memes and video games. As of 2020, reddit has over [53 million](https://www.redditinc.com/) daily active users worldwide.
