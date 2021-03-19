@@ -78,7 +78,7 @@ The main limitation of the model is that it is currently only performing tokenis
 
 ### Conclusion
 
-In conclusion, the project showed that we are able to make predictions on whether a post belongs to r/harrypotter or r/lotr. This could be a good start for the future work that could ease the ever increasing burden on the subreddit moderators across the network. Although our current model is only able to classify between two subreddits. Production model would only need to classify whether a post belongs in the subreddit (1) or it doesn't. In which case, the output would be 0. In our case 1 represented a post belonging to r/harrypotter and 0 represented a post belonging to r/lotr. Reddit could employ such strategy to remove spams and irrelavant content through this process in detecting whether a post belong in the subreddit or not.
+In conclusion, the project showed that we are able to make predictions on whether a post belongs to r/harrypotter or r/lotr. This could be a good start for the future work that could ease the ever increasing burden on the subreddit moderators across the network. Although our current model is only able to classify between two subreddits. The production model would only need to classify whether a post belongs in the subreddit (1) or it doesn't, ie. one-vs-all approach. In which case, the output would be 0. In our case 1 represented a post belonging to r/harrypotter and 0 represented a post belonging to r/lotr. Reddit could employ such strategy to remove spams and irrelavant content through this process in detecting whether a post belong in the subreddit or not.
 
 
 
