@@ -4,7 +4,7 @@
 ### Problem Statement
 Reddit is a massive global online forum with a heavy focus on its communities. These communities are divided into subreddits with each being specific to a certain subject. The variety of the subreddit topics can range from an educational data science subreddit to art, books, memes and video games. As of 2020, reddit has over [53 million](https://www.redditinc.com/) daily active users worldwide.
 
-Each subreddit usually has many moderators and admins moderating the posts to ensure that they meet the subreddit rules. With an everincrasing userbase, the process of moderating these posts are becoming more and more cumbersome requiring greater amount of manpower to ensure the posts are not offtopics and meet the rules.
+Each subreddit usually has many moderators and admins moderating the posts to ensure that they meet the subreddit rules. With an ever increasing userbase, the process of moderating these posts are becoming more and more cumbersome requiring greater amount of manpower to ensure the posts are not offtopics and meet the rules.
 
 In this project, I am proposing the viability of using a machine learning classification model to help distinguishing posts for two different subreddits. We will be looking at applying it to two of the biggest film franchises **r/harrypotter** and **r/lotr**. We will evaluating to see if we can use the texts and language used in the post's title/body(selftext) to classify whether it belongs in r/harrypotter or r/lotr. This project will only be using text features within a post to classify as this is a consistent feature across new posts.
 
