@@ -21,7 +21,7 @@ In this project, I am proposing the viability of using a machine learning classi
 ### Datasets
 The datasets for r/harrypotter and r/lotr were obtained from reddit API.
 
-The project contains two datasets. These datasets contain the information of the individual posts on each subreddit. The original datasets contain 114 columns. However, we will only be selecting a subset 17 relevant columns.
+The project contains two datasets. These datasets contain the information of the individual posts on each subreddit. The original datasets contain 114 columns. However, we will only be selecting a subset 19 relevant columns.
 - harrypotter.csv (865 posts)
 - lotr.csv (1134 posts)
 
@@ -44,10 +44,11 @@ The project contains two datasets. These datasets contain the information of the
 | gilded                | int    | number of reddit gold received (award)                  |
 | spoiler               | bool   | True if the post contains spoilers                      |
 | is_video              | bool   | True if the post contains videos                        |
+| post_hint             | string | post's hints (videos, images, links, etc.)                                   |
 | subreddit             | string | name of the subreddit                                   |
 
 The datatypes of the columns are as follow:
-- **5 strings**: title, selftext, subreddit, ...
+- **6 strings**: title, selftext, subreddit, ...
 - **3 bools**: spoiler, author_premium, is_video
 - **3 floats**: upvote_ratio, num_reports, ...
 - **7 ints**: ups (upvotes), downs (downvotes), num_comments, ...
@@ -80,7 +81,7 @@ In which case, the best performing model is the Logistic Regression Model which 
 
 #### Limitations
 
-The main limitation of the model is that it is currently only performing tokenisation, stopwords removal, stemming and dfidf vectorisation. This is a very simple method that does not seek to understand the context or the meaning of these sentences. We are only looking at word occurances and using that information to classify. Therefore, meanings are lost with this type of process. Improvements could be made by using more NTL techniques that are able to understand the context or able to group relevant words together to provide better context.
+The main limitation of the model is that it is currently only performing tokenisation, stopwords removal, stemming and dfidf vectorisation. This is a very simple method that does not seek to understand the context or the meaning of these sentences. We are only looking at word occurances and using that information to classify. Therefore, meanings are lost with this type of process. Improvements could be made by using more NTL techniques that are able to understand the context or able to group relevant words together to provide better context. Additionally, since many of the posts contain videos and image, we could improve the model by making use of these features as well.
 
 ### Conclusion
 
